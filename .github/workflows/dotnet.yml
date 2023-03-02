@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Publish
-      run: dotnet publish --no-self-contained --runtime linuz-x64 --configuration Release --output ./artifact/publish ./src/cloudformation-demo/cloudformation-demo.csproj
+      run: dotnet publish --no-self-contained --runtime linux-x64 --configuration Release --output ./artifact/publish ./src/cloudformation-demo/cloudformation-demo.csproj
 
     - name: Install zip
       uses: montudor/action-zip@v1
